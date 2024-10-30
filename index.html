@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engg. Completion Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app" style="display: none;"> <!-- Initially hidden until login -->
+        <!-- Navigation Panel with Cards for Each Subject -->
+        <nav id="workspace-nav">
+            <div class="subject-card" onclick="switchWorkspace('HSS')">HSS</div>
+            <div class="subject-card" onclick="switchWorkspace('BCSL')">BCSL</div>
+            <div class="subject-card" onclick="switchWorkspace('OS')">OS</div>
+            <div class="subject-card" onclick="switchWorkspace('FDS')">FDS</div>
+            <div class="subject-card" onclick="switchWorkspace('OOP/CGL')">OOP/CGL</div>
+            <div class="subject-card" onclick="switchWorkspace('Compulsory Assignment')">Compulsory Assignment</div>
+            <div class="subject-card" onclick="switchWorkspace('Test')">Test</div>
+        </nav>
+
+        <!-- Workspace Display Area -->
+        <div id="workspace-display">
+            <h1 id="workspace-title">HSS</h1>
+            <div class="task-sections">
+
+                <!-- To Do Section -->
+                <div class="task-section" id="todo">
+                    <h2>To Do</h2>
+                    <ul id="todo-list"></ul>
+                    <div class="task-input-container">
+                        <input type="text" id="todo-input" placeholder="Add task">
+                        <button class="add-button" onclick="addTask('todo')">Add</button>
+                    </div>
+                </div>
+
+                <!-- Remaining Section -->
+                <div class="task-section" id="remaining">
+                    <h2>Remaining</h2>
+                    <ul id="remaining-list"></ul>
+                </div>
+
+                <!-- Completed Section -->
+                <div class="task-section" id="completed">
+                    <h2>Completed</h2>
+                    <ul id="completed-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clear Buttons Section -->
+        <div class="clear-buttons" style="text-align: center; margin-top: 20px;">
+            <button id="clear-workspace-btn" onclick="clearCurrentWorkspace()">Clear This Workspace</button>
+            <button id="clear-all-workspaces-btn" onclick="clearAllWorkspaces()">Clear All Workspaces</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal">
+        <div class="modal-content">
+            <h2>🕵️‍♂️ Spy Time! Enter Secret ID & Magic Password!</h2>
+            <input type="text" id="user-id" placeholder="Enter User ID" />
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter Password" />
+                <button id="toggle-password" onclick="togglePassword()">
+                    👁️
+                </button>
+            </div>
+            <button onclick="login()">Let's Get This Party Started!</button>
+            <p id="error-message" style="color: red;"></p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

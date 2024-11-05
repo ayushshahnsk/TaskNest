@@ -1,16 +1,16 @@
 # Assignment-Tracker
 
-## Purpose of the Application
+## Description
 
-The Assignment Tracker is a task-tracking web application designed to help students manage and monitor their tasks for various engineering subjects. Users can organize tasks into three categories: "To Do," "Remaining," and "Completed." 
-
-The application features a login modal that restricts access to the main content until a user successfully logs in, ensuring that only authorized users can view and manage their tasks.
+TaskNest is a web-based application designed to help students and professionals manage their tasks efficiently across different subjects. Users can log in using a secret ID and password, switch between various subjects, and track their tasks in three categories: To Do, Remaining, and Completed. This app provides a simple and intuitive interface for managing assignments and ensuring timely completion.
 
 ## Features
 
-- **User Authentication**: Secure login modal to access the application.
-- **Task Management**: Organize tasks into "To Do," "Remaining," and "Completed" categories.
-- **User-Friendly Interface**: Easy navigation and task management.
+- **User Authentication**: Secure login with a user ID and password.
+- **Dynamic Workspace**: Switch between different subjects to manage specific tasks.
+- **Task Management**: Add, edit, delete, and move tasks between categories.
+- **Data Persistence**: Store tasks in local storage to retain them across sessions.
+- **User-friendly Interface**: Clean design with responsive navigation and task sections.
 
 ## License
 

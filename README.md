@@ -14,9 +14,8 @@ TaskNest is a web-based application designed to help students and professionals 
 
 ## License
 
-This project is licensed under both the MIT License and the Apache License 2.0. You may choose either license for your use of this project.
+This project is licensed under the Apache License 2.0. You are free to use, modify, and distribute this project under the terms of this license.
 
-- **MIT License**: See the [LICENSE.txt] file for details.
 - **Apache License 2.0**: See the [LICENSE.txt] file for details.
 
-Copyright 2024 TaskNest
+Copyright (c) 2024 TaskNest
